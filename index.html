@@ -9,13 +9,11 @@
     	<link rel="shortcut icon" href="../../assets/ico/favicon.ico">
     	<title>Data Center Mockup</title>
     	<link rel="stylesheet" href="css/bootstrap.min.css">
-    	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-    	<link href="css/style.css" rel="stylesheet">
+    	<link rel="stylesheet" href="css/style.css">
     </head>
     <body>
     <div id="page-header">
-    <header>
-    <div class="row">
+    <header class="row">
     	<div class="col-md-5 logo">
     		<a href="/">
     			<img alt="The Data Center" id="DC_logo" src="images/md-logo.png">
@@ -26,9 +24,9 @@
 	<div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
             <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research & Analysis 
-            <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Find Research
+            </a>
+                <ul class="dropdown-menu" role="menu" id="RA">
                     <li><a href="#">The New Orleans Index</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Economy & Workforce</a></li>
@@ -41,10 +39,10 @@
                 </ul>
             </li>
             <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Profiles 
-            <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Look Up Data
+            </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Neighborhood Statistical Area Data Profiles</a></li>
+                    <li><a href="#">Data Profiles by Neighborhood</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Who Lives in the Metro area Now?</a></li>
                     <li class="divider"></li>
@@ -59,7 +57,7 @@
             </li>
             <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Maps 
-            <span class="caret"></span></a>
+            </a>
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="#">Our Changing Demographics</a></li>
                     <li class="divider"></li>
@@ -70,8 +68,8 @@
                     <li><a href="#">Reference Maps</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us
-            <span class="caret"></span></a>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
             <ul class="dropdown-menu" role="menu">
                     <li><a href="#">The Data Center: An Overview</a></li>
                     <li class="divider"></li>
@@ -80,315 +78,182 @@
                     <li><a href="#">Board of Directors</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Job Opportunities</a></li>
-                </ul>
-                </li>
+            </ul>
+            </li>
       </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /col-md-7 -->
 
-    </div>
+ 
     </header>
     </div>
-        <script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/jquery-1.11.1.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript"> $(document).ready(function () { $('.dropdown-toggle').dropdown(); }); </script>
+
 <div class="row">
 <div class="col-md-1">
-    </div>
-    <div class="col-md-11">
-    <h1>Neighborhood Statistical Area Data Profiles</h1>
-    </div>
 </div>
-<div class="row">
+<div class="col-md-11">
+<h1>Lakeview Statistical Area</h1>
+<div class="breadcrumbs" style="margin-top: 1em; margin-bottom: 1em;">Neighborhood Data: <a href="http://www.datacenterresearch.org/data-resources/neighborhood-data/">Orleans Parish</a> > <a href="http://www.datacenterresearch.org/data-resources/neighborhood-data/district-5/">Lakeview District 5</a> > Lakeview
+</div>
+<p class="date-published">Last update: Mar 28, 2014</p>
+</div>
+</div>
+<div class="row"><!-- begin nav2 row -->
 <div class="col-md-1">
+</div>
+<div class="col-md-3">
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a id="intro" href="#introduction">Overview</a>
+       </h4>
     </div>
-    <div class="col-md-3">
-        <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
+    </div> 
+<div class="panel panel-default">
         <div class="panel-heading">
         <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          Algiers
+        <a id="people_h" data-toggle="collapse" data-parent="#accordion" id="pd6_intro" href="#PeopleHousehold">
+          People & Households
         </a>
       </h4>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
+    <div id="PeopleHousehold" class="panel-collapse collapse in">
       <div class="panel-body">
         <ul>
-        <li><a href="#">Algiers Point</a></li>
-        <li><a href="#">Behrman</a></li>
-        <li><a href="#">Fischer Dev</a></li>
-        <li><a href="#">McDonogh</a></li>
-        <li><a href="#">Old Aurora</a></li>
-        <li><a href="#">Tall Timbers/Brechtel</a></li>
-        <li><a href="#">US Naval Support Area/Federal City</a></li>
-        <li><a href="#">Whitney</a></li>
+        <li><a id="total_pop" data-cNav="pd6_total_pop" href="#">Total Population</a></li>
+        <li><a data-cNav="pd6_gender" href="#">Gender</a></li>
+        <li><a data-cNav="pd6_age" href="#">Age</a></li>
+        <li><a data-cNav="pd6_diversity" href="#">Racial & Ethnic Diversity</a></li>
+        <li><a data-cNav="pd6_hh_type" href="#">Households by Type</a></li>
+        <li><a data-cNav="pd6_hh_kids" href="#">Children in Households</a></li>
+        <li><a data-cNav="pd6_hh_elderly" href="#">Elderly in Households</a></li>
         </ul>
       </div>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          Bywater
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <ul>
-        <li><a href="#">Bywater</a></li>
-        <li><a href="#">Desire Development and Neighborhood</a></li>
-        <li><a href="#">Florida Area</a></li>
-        <li><a href="#">Florida Development</a></li>
-        <li><a href="#">Marigny</a></li>
-        <li><a href="#">St. Claude</a></li>
-        <li><a href="#">St. Roche</a></li>
-        </ul>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Gentilly
-        </a>
-      </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul>
-        <li><a href="#">Dillard</a></li>
-        <li><a href="#">Fillmore</a></li>
-        <li><a href="#">Lake Terrace & Lake Oaks</a></li>
-        <li><a href="#">Gentilly Terrace</a></li>
-        <li><a href="#">Gentilly Woods</a></li>
-        <li><a href="#">Milneburg</a></li>
-        <li><a href="#">Pontchartrain Park</a></li>
-        <li><a href="#">St. Anthony</a></li>
-        </ul>
-      </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
- <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-          Central City/Garden District
-        </a>
-      </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseFour" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul>
-        <li><a href="#">Central City</a></li>
-        <li><a href="#">East Riverside</a></li>
-        <li><a href="#">Garden District</a></li>
-        <li><a href="#">Irish Channel</a></li>
-        <li><a href="#">Lower Garden District</a></li>
-        <li><a href="#">Milan</a></li>
-        <li><a href="#">St. Thomas Development</a></li>
-        <li><a href="#">Touro</a></li>
-        </ul>
-      </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
+  </div><!-- /people & households -->
 <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-          French Quarter/Central Business District
+        <div class="panel-heading">
+        <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#HousingCosts">
+          Housing & Housing Costs
         </a>
       </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseFive" class="panel-collapse collapse">
+    </div>
+    <div id="HousingCosts" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-        <li><a href="#">Central Business District</a></li>
-        <li><a href="#">French Quarter</a></li>
+        <li><a href="#">Occupancy Status</a></li>
+        <li><a href="#">Renters & Owners</a></li>
+        <li><a href="#">Households by Type</a></li>
+        <li><a href="#">Mortgage Status</a></li>
+        <li><a href="#">Average Rental Cost</a></li>
+        <li><a href="#">Housing Affordability by owner/renter status</a></li>
         </ul>
       </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-          Lakeview
+    </div>
+  </div><!-- /housing & housing costs -->
+  <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#IncomePov">
+          Income & Poverty
         </a>
       </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseSix" class="panel-collapse collapse">
+    </div>
+    <div id="IncomePov" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-        <li><a href="#">City Park</a></li>
-        <li><a href="#">Lakeshore/Lake Vista</a></li>
-        <li><a href="#">Lakeview</a></li>
-        <li><a href="#">Lakewood</a></li>
-        <li><a href="#">Navarre</a></li>
-        <li><a href="#">West End</a></li>
+        <li><a href="#">Household Income Type</a></li>
+        <li><a href="#">Average Household Income</a></li>
+        <li><a href="#">Income Distribution</a></li>
+        <li><a href="#">Population in Poverty</a></li>
         </ul>
       </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
+    </div>
+  </div><!-- /income & poverty -->
+  <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#transportation">
+          Transportation
+        </a>
+      </h4>
+    </div>
+    <div id="transportation" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+        <li><a href="#">Vehicles Available</a></li>
+        <li><a href="#">Type of transportation, workers 16+</a></li>
+        <li><a href="#">Travel time to work, workers 16+</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /transportation -->
+  <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#education">
+          Educational Attainment
+        </a>
+      </h4>
+    </div>
+    <div id="education" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+        <li><a href="#">Level of Schooling, 18+</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /education -->
 
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
-          Lower Ninth Ward
+        <div class="panel-heading">
+        <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#language">
+          Language
         </a>
       </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseSeven" class="panel-collapse collapse">
+    </div>
+    <div id="language" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-        <li><a href="#">Lower Ninth Ward</a></li>
-        <li><a href="#">Holy Cross</a></li>
+        <li><a href="#">English as a Second Language</a></li>
         </ul>
       </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
-
-    <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
-          Mid-City
+    </div>
+  </div><!-- /language -->
+<div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#employment">
+          Employment
         </a>
       </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseEight" class="panel-collapse collapse">
+    </div>
+    <div id="employment" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-        <li><a href="#">Bayou St. John</a></li>
-        <li><a href="#">B.W. Cooper Apts</a></li>
-        <li><a href="#">Fairgrounds</a></li>
-        <li><a href="#">Gert Town</a></li>
-        <li><a href="#">Iberville</a></li>
-        <li><a href="#">Mid-City</a></li>
-        <li><a href="#">Seventh Ward</a></li>
-        <li><a href="#">St. Bernard Area</a></li>
-        <li><a href="#">Treme/Lafite</a></li>
-        <li><a href="#">Tulane/Gravier</a></li>
+        <li><a href="#">Workers living in the neighborhood by age level</a></li>
+        <li><a href="#">Workers living in the neighborhood by industry sector</a></li>
         </ul>
       </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
-
-      <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
-          New Aurora/English Turn
-        </a>
-      </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseNine" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul>
-        <li><a href="#">New Aurora/English Turn</a></li>
-        </ul>
-      </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
-
-      <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
-          New Orleans East
-        </a>
-      </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseTen" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul>
-        <li><a href="#">Little Woods</a></li>
-        <li><a href="#">Pines Village</a></li>
-        <li><a href="#">Plum Orchard</a></li>
-        <li><a href="#">Read Blvd East</a></li>
-        <li><a href="#">Read Blvd West</a></li>
-        <li><a href="#">West Lake Forest</a></li>
-        </ul>
-      </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
-
-    <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
-          Viavant/Venetian Isles
-        </a>
-      </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseEleven" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul>
-        <li><a href="#">Viavant/Venetian Isles</a></li>
-        <li><a href="#">Lake Catherine</a></li>
-        </ul>
-      </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
-
-    <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">
-          Village De l'Est
-        </a>
-      </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseTwelve" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul>
-        <li><a href="#">Village De l'Est</a></li>
-        </ul>
-      </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
-
-
-    <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">
-          Uptown/Carrolton
-        </a>
-      </h4>
-    </div><!-- /panel heading -->
-    <div id="collapseThirteen" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul>
-        <li><a href="#">Audubon</a></li>
-        <li><a href="#">Black Pearl</a></li>
-        <li><a href="#">Broadmoor</a></li>
-        <li><a href="#">Dixon</a></li>
-        <li><a href="#">East Carrollton</a></li>
-        <li><a href="#">Freret</a></li>
-        <li><a href="#">Hollygrove</a></li>
-        <li><a href="#">Leonidas</a></li>
-        <li><a href="#">Marlyville/Fontainebleu</a></li>
-        <li><a href="#">Uptown</a></li>
-        <li><a href="#">West Riverside</a></li>
-        </ul>
-      </div>
-    </div><!-- /collapse 3 -->
-  </div><!-- /panel -->
-
-</div><!-- /accordion -->
-</div><!-- /col-md-3 -->
+    </div>
+  </div><!-- /Employment -->
+</div><!-- /accordian -->
+</div><!-- /col-md-2 -->
 <div class="col-md-8">
-<article id="algiersPoint">
-<h1>Algiers</h1>
-<img src="images/12v2_Algiers.png">
-</article>
-</div>
-</div><!-- /row -->
+<section class="row main" id="main_c">
+    
+</section>
+</div><!-- /col-md-8 -->
+</div><!-- /end nav2 row -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typeahead.bundle.js"></script>
+    <script src="js/typeahead.jquery.js"></script>
+    <script src="js/site2.js"></script>
     </body>
 </html>
