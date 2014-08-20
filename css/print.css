@@ -1,0 +1,119 @@
+html,body{
+	background:white;
+	font-size:12pt !important;
+	font-family: "Georgia";
+}
+
+
+
+
+.row .one,
+.row .two,
+.row .three,
+.row .four,
+.row .five,
+.row .six,
+.row .seven,
+.row .eight,
+.row .nine,
+.row .ten,
+.row .eleven,
+.row .twelve,
+.row .offset-by-one,
+.row .offset-by-two,
+.row .offset-by-three,
+.row .offset-by-four,
+.row .offset-by-five,
+.row .offset-by-six,
+.row .offset-by-seven,
+.row .offset-by-eight,
+.row .offset-by-nine,
+.row .offset-by-ten,
+.row .centered,
+.row .offset-by-one:first-child,
+.row .offset-by-two:first-child,
+.row .offset-by-three:first-child,
+.row .offset-by-four:first-child,
+.row .offset-by-five:first-child,
+.row .offset-by-six:first-child,
+.row .offset-by-seven:first-child,
+.row .offset-by-eight:first-child,
+.row .offset-by-nine:first-child,
+.row .offset-by-ten:first-child,
+.row .offset-by-eleven:first-child{margin-bottom:0 !important;width:auto !important; float:left !important;}
+.print-only{display:none !important;}
+a:link,a:visited{color:#666 !important;}
+
+
+#sitewide-message,
+#secondary-header,
+#page-header,
+#footer,
+.shareTools,
+.cover-image,
+.categories,
+nav,
+.section-menu,
+.list.show-for-small-only,
+.breadcrumbs {
+	display: none !important;
+}
+
+.sidebar {
+	margin-top: 2em;
+}
+
+h2,
+h3 {
+	font-weight: bold;
+}
+
+.highlight {
+	border: 1px solid #ccc;
+	padding: .5cm 1cm;
+	margin: .5cm 0 ;
+}
+h2 a:after,
+h3 a:after {
+	content: "" !important;
+}
+
+p a:after {
+	content: " (" attr(href) ")";
+	font-size: 80%;
+}
+
+p a[href*=".png"]:after,
+p a[href*=".jpg"]:after,
+p a[href*=".gif"]:after {
+	content: "" !important;
+	font-size: 80%;
+}
+
+
+#print-header {
+	display: block;
+	text-align: center;
+	}
+
+#print-header img {
+	width: 80%;
+	}
+	
+table {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+table tbody td {
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	}
+
+table a:after {
+	content: '' !important;
+}
+	
+@page {
+      margin: 2cm 1.5cm;
+   }
