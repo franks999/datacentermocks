@@ -1688,26 +1688,12 @@ section.main {
 	padding-top: 10px;
 }
 
+.neighborhood-data div {
+	padding-top: 2em;
+}
+
 .neighborhood-data h2 {
 	margin-top: 0;
-}
-
-.panel, .panel-title, .panel-heading {
-	border: none;
-	background-color: #fff !important;
-}
-
-.panel-body ul {
-	list-style: none;
-	padding-left: 0;
-}
-
-.panel-title a {
-	padding-left: 5px;
-}
-
-.panel-body a {
-	padding-left: 5px;
 }
 
 .btn {
@@ -1717,6 +1703,29 @@ section.main {
 
 .pan-select {
 	border-left: solid 4px #9eb23b;
+}
+
+#myside {
+	margin-top: 3em;
+}
+
+#myside > li > a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#myside > li > h4 > a {
+	padding-left: .25em;
+	margin-top: .25em;
+	margin-bottom: .25em;
+}
+
+#myside > li > h4 > a:hover {
+	text-decoration: n;
+}
+
+h2 {
+	margin-top: 3em !important;
 }
 
 
