@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-
+// added stuff for mockup
 
 	$('.dropdown-toggle').dropdown();
 
